@@ -69,6 +69,12 @@ if (selected == 'Diabetes Prediction'):
         
         if (diab_prediction[0] == 1):
           diab_diagnosis = 'The person is diabetic'
+            We would like to suggest them some preventions like:
+            To make healthy food choices,and most importantly to reduce their sugar intake.
+            Stay at a healthy weight.
+            To move more everyday.
+            Take their medicine even when they feel good.
+                And most importantly to reduce their sugar intake.
         else:
           diab_diagnosis = 'The person is not diabetic'
         
