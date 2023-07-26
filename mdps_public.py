@@ -23,16 +23,7 @@ with st.sidebar:
                            'Parkinsons Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
-if(selected == 'Register'):
-    st.title('Welcome to SickSense')
 
-    Name =st.text_input('Name')
-    Email =st.text_input('Email Address')  
-    Password =st.text_input('Password') 
-
-    st.button('Login')    
-    
-    
 # Diabetes Prediction Page
 if (selected == 'Diabetes Prediction'):
     
