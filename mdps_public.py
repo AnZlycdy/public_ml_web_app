@@ -67,14 +67,15 @@ if (selected == 'Diabetes Prediction'):
     if st.button('Diabetes Test Result'):
         diab_prediction = diabetes_model.predict([[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
         
-        if (diab_prediction[0] == 1):
-          diab_diagnosis = 'The person is diabetic'
+        
           st.write("we would like to suggest them some preventions like:")
           st.markdown(" to make healthy food choices,")
           st.markdown("stay at a healthy weight,")
           st.markdown("to move more every day,")
           st.markdown("take their medicine even when they feel good ")
           st.markdown("and most importantly to reduce thier sugar intake.")
+        if (diab_prediction[0] == 1):
+          diab_diagnosis = 'The person is diabetic'
         else:
           diab_diagnosis = 'The person is not diabetic'
         
