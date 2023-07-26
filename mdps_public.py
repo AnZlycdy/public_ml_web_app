@@ -13,6 +13,7 @@ parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
+
 # sidebar for navigation
 with st.sidebar:
     
@@ -23,7 +24,6 @@ with st.sidebar:
                            'Parkinsons Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
-
 # Diabetes Prediction Page
 if (selected == 'Diabetes Prediction'):
     
@@ -69,12 +69,12 @@ if (selected == 'Diabetes Prediction'):
         
         if (diab_prediction[0] == 1):
           diab_diagnosis = 'The person is diabetic'
-            We would like to suggest them some preventions like:
-            To make healthy food choices,and most importantly to reduce their sugar intake.
-            Stay at a healthy weight.
-            To move more everyday.
-            Take their medicine even when they feel good.
-                And most importantly to reduce their sugar intake.
+          st.write("we would like to suggest them some preventions like:")
+          st.markdown(" to make healthy food choices,")
+          st.markdown("stay at a healthy weight,")
+          st.markdown("to move more every day,")
+          st.markdown("take their medicine even when they feel good ")
+          st.markdown("and most importantly to reduce thier sugar intake.")
         else:
           diab_diagnosis = 'The person is not diabetic'
         
@@ -143,6 +143,10 @@ if (selected == 'Heart Disease Prediction'):
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
+          st.write("we would like to suggest them some preventions like:")
+          st.markdown(" Get regular physical activity to help you maintain a healthy weight ,")
+          st.markdown("Regularly check and maintain your blood pressure, cholesterol, and blood sugar levels,")
+          st.markdown("Consult to doctor and take your medication on time.")
         else:
           heart_diagnosis = 'The person does not have any heart disease'
         
@@ -236,6 +240,12 @@ if (selected == "Parkinsons Prediction"):
         
         if (parkinsons_prediction[0] == 1):
           parkinsons_diagnosis = "The person has Parkinson's disease"
+          st.write("we would like to suggest them some preventions like:")
+          st.markdown("Most importantly eat a healthy diet,")
+          st.markdown("Avoide exposure to toxins,")
+          st.markdown("Get enough and quality sleep,")
+          st.markdown("Manage stress and be in good mental health,")
+          st.markdown("Consult to doctor and take your medication on time.")
         else:
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
